@@ -1,0 +1,191 @@
+body {
+    background-color: cornflowerblue;
+
+    width: 90%;
+    
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+
+    float: right;
+
+    width: 45%;
+}
+
+.logo {
+    display: inline-block;
+
+    background-color: rgb(93, 183, 238);
+
+    border-radius: 15px;
+
+    margin: 10px;
+    margin-left: 70px;
+
+    width: 40%;
+
+    text-align: center;
+
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+
+    color: lightcyan;
+
+    margin: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+
+    border-right: 2px solid cornflowerblue;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    color: brown;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+nav ul li:last-child {
+    border: none;
+}
+
+nav {
+    background-color: white;
+
+    height: 100px;
+}
+
+
+.banner {
+    height: 300px;
+
+
+}
+
+.banner div {
+    height: 100px;
+}
+
+.banner div:first-child {
+    background-color: red;
+}
+
+.banner div:last-child {
+    background-color: blue;
+}
+
+.banner div:nth-child(2) {
+    background-color: green;
+}
+
+
+.first {
+    font-size: 20px;
+
+    #animation: move 4s linear infinite alternate-reverse;
+}
+
+@keyframes move {
+
+    from {
+        margin-left: 0%;
+    }
+
+    50% {
+        font-size: 35px;
+
+        color: white;
+    }
+
+    to {
+        margin-left: 83%;
+    }
+}
+
+.second {
+    font-size: 50px;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: white;
+
+    #animation: appear 2s linear infinite;
+
+
+}
+
+@keyframes appear {
+
+    from {
+        height: 0px;
+
+        overflow: hidden;
+    }
+
+    50% {
+        height: 100px;
+
+        overflow: hidden;
+    }
+
+    to {
+        height: 0px;
+
+        overflow: hidden;
+    }
+}
+
+
+.third {
+    color: white;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    height: 100px;
+
+    #animation: flyup 3s linear infinite;
+}
+
+@keyframes flyup {
+
+    from {
+        transform: translateY(75px) scale(0.5);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0px) scale(1.2);
+        opacity: 100%;
+    }
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+
+    text-align: center;
+
+    margin: 10px;
+
+    color: blanchedalmond;
+}
+
+
